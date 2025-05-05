@@ -1,4 +1,4 @@
-STEP 1. Prepare the data file which contains at least two columns of chemical potentials.
+STEP 1. Prepare the data file which contains at least two columns of chemical potentials.<br/>
 STEP 2. Set the following parameters in main.m file.
 - fp: filepath of dataset plain file in which data are separated by comma
 - epsilon: distance error threshold of chemical potential pairs 
