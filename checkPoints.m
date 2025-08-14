@@ -3,9 +3,6 @@
 % Parameters:
 % - fp: filepath of dataset plain file in which data are separated by comma
 % - epsilon: distance error threshold of chemical potential pairs 
-% - omega: neighbor radius of chemical potential pairs
-% - delta: minimal interval of indices of chemical potential pairs in the
-% data sequence
 % - kappa: display switch 
 
 % The Output: indices of pairs.The first pair is the best one.
@@ -15,7 +12,7 @@
 % date: 2025.05.30
 
 
-function pairs=checkPoints(fp,epsilon,omega,delta,kappa)  
+function pairs=checkPoints(fp,epsilon,kappa)  
     pairs =[];
     Pts =[];
     try
@@ -71,7 +68,7 @@ function pairs=checkPoints(fp,epsilon,omega,delta,kappa)
         start_point1=seg_indices(i,1);
         end_point1=seg_indices(i,2);
         MUs1 =Pts(start_point1:end_point1,1:2);
-        for j=i+1:N
+        for j=i+2:N
             start_point2=seg_indices(j,1);
             end_point2=seg_indices(j,2);
             MUs2 =Pts(start_point2:end_point2,1:2);
