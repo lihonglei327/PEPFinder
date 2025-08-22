@@ -3,7 +3,5 @@ This software is used to find phase equilibrium point pairs in the chemimal pote
 <h4>STEP 2. Set the following parameters in main.m file.</h4>
 - fp: filepath of dataset plain file in which data are separated by comma<br/>
 - epsilon: distance error threshold of chemical potential pairs <br/>
-- omega: neighbor radius of chemical potential pairs<br/>
-- delta: minimal interval of indices of chemical potential pairs in the data sequence<br/>
 - kappa: display the scatter plot if true
 <h4>STEP 3. Run main.m.</h4>
